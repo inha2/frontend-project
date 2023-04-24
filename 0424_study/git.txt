@@ -1,0 +1,96 @@
+
+git
+버전 관리 시스템(vcs: version control system)
+svn(subversion)
+-중앙집중식
+-기능 이 완성된 형태로 commit
+
+git
+분산형 버전 관리
+개발자 별 commit history
+개발자 repository(저장소)와 서버 repository를 독립적으로 운영
+
+특징
+대부분의 명령을 로컬에서 실행
+원격 저장소의 정보가 필요할 때만 연결 (pull,push)
+오프라인 환경에서도 commit
+
+타임머신 가능
+현재파일들을 안전한 상태로 과거상태 그대로 복원 가능
+
+사용자 구분을 위한 git 설정
+--global 옵션으로 모든 프로젝트에 설정 적용
+
+콘솔 실행
+git > git cmd 또는 git bash
+
+사용자 설정
+git conflg -global user.name "사용자 이름"
+git conflg -global user.email "사용자 이메일"
+
+설정 확인
+git conflg--list
+git conflg--user.name
+
+
+저장소 생성
+로컬 저장소롤 저장할 폴더 생성
+사용할 폴더 이동(cd 디렉토리 경로)
+새로운 저장소 생성
+git init
+해당 폴더에 .git 폴더 생성 확인
+
+.git 
+프로젝트 관리를 위한 파일
+해당 프로젝트에만 적용할 config 파일 생성
+
+
+git 버전 확인 
+
+사용할 폴더 생성 및 숨김 파일 보기 설정
+파인더 해당 폴더 선택 ㅋ커맨트 쉬프트 +
+
+
+설정 항목 삭제
+git-config --global --unset[항목]
+ex) git config --global --unset username
+
+git log 실행 후 콘솔 대기 상태일 떄
+'q'눌러 해제
+
+상태확인
+git status
+
+on branch master(또는 main)
+master(또는 main) 라는 기본 가지(branch) 사용
+
+no commits yet
+commit한 내역 없음
+
+add 
+커밋할 목록에 추가
+
+commit
+커밋(히스토리의 한 다위) 만들기
+
+push
+현재까지의 내용을 github 에 전달 
+
+
+원격 서버 주소 설정
+git remote and origin (원격 서버 주소)
+origin :remote repository (원격 저장소) 이름, 다른 이름도 무관
+원격 서버 주소: github 에서 확인
+
+
+
+원격 저장소 확인
+git remote-v  
+
+원격 저장소 이름 변경
+git remote rename [기존이름][새로운 이름]
+원격저장소의 브랜치 이름도 변경됨
+
+
+원격저장소 삭제
+git remote rm[저장소 이름]
