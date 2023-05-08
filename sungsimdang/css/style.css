@@ -1,0 +1,28 @@
+.sungsimdang{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+}
+.login{
+    display: flex;
+    justify-content: right;
+    padding-left: 10px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+.login a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #a7a9ac;
+    padding-right: 10px;
+    font-size: 13px;
+}
+.login a:nth-child(-n+3){
+    border-right: 1px solid #a7a9ac;
+}
